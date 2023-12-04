@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: pangram-sans-regular;
+  src: url(../content/fonts/pangram-sans-regular.otf);
+}
+
+@font-face {
+  font-family: pangram-sans-bold;
+  src: url(../content/fonts/pangram-sans-bold.otf);
+}
+
+body {
+  background-color: rgb(247, 241, 234);
+}
+.container {
+  display: grid;
+  place-items: center;
+  height: 60vh;
+}
+
+.container-2 {
+  height: 60vh;
+  aspect-ratio: 4 / 3;
+  position: absolute;
+}
+
+video {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+img {
+  height: 60vh;
+  aspect-ratio: 4 / 3;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: pangram-sans-bold;
+  font-size: clamp(7rem, 5vw, 7rem);
+  font-weight: 100;
+  padding: 4rem 0rem 0rem 4rem;
+  color: rgb(208, 153, 89);
+  text-align: center;
+}
+
+p {
+  font-family: pangram-sans-regular;
+  font-size: clamp(1.1rem, 1.2vw, 3.4rem);
+  padding: 0.8rem 0rem 0rem 4rem;
+  color: rgb(82, 43, 20);
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 25vh;
+  left: 2vw;
+}
+
+.buttons img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 0px;
+  object-fit: contain;
+}
+
+button {
+  border: 1px solid rgb(219, 215, 206);
+  border-radius: 100px;
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 2rem;
+}
+
+button video {
+  border-radius: 100%;
+  position: inherit;
+  mix-blend-mode: darken;
+  width: 128%;
+  margin: -18% 0 0 -14%;
+}

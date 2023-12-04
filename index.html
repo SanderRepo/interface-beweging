@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <title>Wat doet capy? – Interface & Beweging website</title>
+  </head>
+  <body>
+    <main>
+      <h1>Wat doet capy?</h1>
+      <p>Ontdek alle avonturen van deze capybara</p>
+      <div class="container">
+        <img src="./content/images/bg-1.jpg" id="backgroundImage" alt="" />
+        <div class="container-2">
+          <video id="videoPlayer" autoplay loop muted playsinline>
+            <source
+              id="sourceSafari"
+              src="./content/video/animation-1-hevc-safari.mp4"
+              type='video/mp4; codecs="hvc1"'
+            />
+            <source
+              id="sourceChrome"
+              src="./content/video/animation-1-vp9-chrome.webm"
+              type="video/webm"
+            />
+          </video>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="buttonOne">
+          <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+            <source src="./content/icons/icon-1.mp4" type="video/mp4;" />
+          </video>
+        </button>
+        <button class="buttonTwo">
+          <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+            <source src="./content/icons/icon-2.mp4" type="video/mp4;" />
+          </video>
+        </button>
+        <button class="buttonThree">
+          <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+            <source src="./content/icons/icon-3.mp4" type="video/mp4;" />
+          </video>
+        </button>
+      </div>
+    </main>
+  </body>
+  <script src="./scripts/script.js"></script>
+</html>
